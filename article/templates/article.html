@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block sidebar %}
+	<ul>
+		<li><a href="/articles/all">Articles</a></li>	
+		
+	</ul>
+	{% endblock %}
+{% block content %}
+{% if article.count > 0 %}
+		<div>{{ article.title }}</div><br/>	
+		<div>{{ article.body }}</div>
+{% else %}
+	
+	<p>None to show</p>
+{% endif %}
+{% endblock %}
+	

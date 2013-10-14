@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block sidebar %}
+	<ul>
+		<li><a href="/articles/all">Articles</a></li>	
+		
+	</ul>
+	{% endblock %}
+{% block content %}
+{% for article in articles %}
+		<a href="/articles/get/{{ article.id }}/"><div>{{ article.title }}</div></a><br/>	
+		<div>{{ article.body }}</div>
+{% endfor %}
+{% endblock %}

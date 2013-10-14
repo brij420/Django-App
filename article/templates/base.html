@@ -1,0 +1,19 @@
+<html>
+	<head><title>Article</title></head>
+	<body>
+	<div id="page">
+	{% block sidebar %}
+	<ul>
+		<li><a href="/articles/all">Articles</a></li>	
+		<li><a href="/admin/">Admin</a></li>
+	</ul>
+	{% endblock %}
+	
+	
+	<div id="content">
+	{% block content %} This is the content area {% endblock %}
+	</div>
+	
+	</div>
+	</body>
+</html>
